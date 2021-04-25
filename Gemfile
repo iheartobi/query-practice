@@ -31,6 +31,10 @@ gem 'bootsnap', '>= 1.4.4', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'factory_bot_rails' # models factories with random data for testing
+  gem 'rspec-rails' # automated tests ruby framework
+  gem 'faker' # provides fake data for factories
+  gem 'awesome_print', require: "ap" # get a better experience working with rails console
 end
 
 group :development do
